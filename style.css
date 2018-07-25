@@ -1,0 +1,23 @@
+.wrapper {
+	display: grid;
+	grid-template-rows: 500px 500px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 'background-img background-img background-img'
+											 'background-img background-img background-img'
+											 'background-img background-img background-img'
+											 'background-img background-img background-img'; 
+}
+
+.background {
+	grid-area: background-img;
+	background-image: url(sunny-day.jpg);
+	background-repeat: no-repeat;
+	z-index: 0;
+}
+
+.kitten {
+	position: relative;
+  top: 679px;
+  left: 553px;
+  z-index: 1;
+}
