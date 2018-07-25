@@ -3,8 +3,6 @@
 	grid-template-rows: 500px 500px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 'background-img background-img background-img'
-											 'background-img background-img background-img'
-											 'background-img background-img background-img'
 											 'background-img background-img background-img'; 
 }
 
@@ -16,8 +14,32 @@
 }
 
 .kitten {
-	position: relative;
-  top: 679px;
+  background-image: url('kitten-medium.png');
+  background-repeat: no-repeat;
+	height: 275px;
+  width: 448px;
+  position: relative;
+  top: 65%;
   left: 553px;
   z-index: 1;
+}
+
+@media screen and (max-width: 961px) {
+	.wrapper {
+		grid-template-rows: 250px 250px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 'background-img background-img'
+												 'background-img background-img';
+	}
+
+	.background {
+		background-image: url(night.jpg);
+	}
+
+  .kitten {
+    background-image: url(kitten-small.png);
+    height: 271px;
+    top: 40%;
+    left: 315px;
+  }
 }
