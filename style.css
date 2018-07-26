@@ -1,16 +1,16 @@
 .wrapper {
-	display: grid;
-	grid-template-rows: 400px 400px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: 'background-img background-img background-img'
-											 'background-img background-img background-img';
+  display: grid;
+  grid-template-rows: 400px 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'background-img background-img background-img'
+                  'background-img background-img background-img';
 } 
 
 .background {
-	grid-area: background-img;
-	background-image: url('sunny-day.jpg');
+  grid-area: background-img;
+  background-image: url('sunny-day.jpg');
   background-size: cover;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .kitten {
@@ -18,7 +18,7 @@
   background-image: url('kitten-medium.png');
   background-repeat: no-repeat;
   background-size: contain;
-	height: 275px;
+  height: 275px;
   width: 448px;
   position: relative;
   top: 64%;
